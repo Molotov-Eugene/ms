@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  
+  h1 Add user:
+  form#add
+    input(name='name', type='text', placeholder='Enter name' required).inputField
+    input(name='email', type='email', placeholder='Enter email' required).inputField
+    button(name='submit' type='submit').submitBtn add
+  h1 List of users:
+  if users
+    div.userList
+      each user in users
+          div.user
+            div.name
+              =user.name
+            div.email
+              =user.email
+            div.created
+              =user.created
+            div.updated
+              =user.updated

@@ -1,0 +1,97 @@
+@media only screen and (max-width: 480px) {
+  .user > * {
+    flex: 1 0 20%;
+    min-width: 150px;
+  }
+
+  .submitBtn {
+    position: relative;
+    left: 75%;
+  }
+}
+
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.inputField {
+  height: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.submitBtn {
+  display: block;
+  margin: 5px 5px;
+  height: 2rem;
+  width: auto;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.user > * {
+  flex: 1 0 21%;
+  margin: 5px;
+}
+
+
+
+.wrongEmail {
+  border: 1px solid rgba(255, 10, 10, 0.9);
+}
+
+.name {
+  font-weight: bold;
+}
+
+.name::before {
+  content: 'Name: ';
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.email {
+  cursor: pointer;
+  font-weight: bold;
+  color: purple;
+}
+
+.email::before {
+  content: 'Email: ';
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.created,
+.updated {
+  font-style: italic;
+}
+
+.created::before {
+  content: 'Created: ';
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.updated::before {
+  content: 'Updated: ';
+  color: rgba(0, 0, 0, 0.5)
+}
+
+
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.user:nth-child(even) {
+  background-color: rgba(100, 100, 100, 0.2)
+}
